@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	color: #f5f5f5;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3vw;
+	font-weight: 900;
+	padding: 0.5% auto;
+	text-align: center;
+	line-height: 1;
+	color: #eee;
+}
+
+h2 {
+	font-size: 250%;
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+	padding: 2% 0;
+}
+
+h3 {
+	font-size: 1.5vw;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding: 1% 0%;
+}
+
+h4 {
+	font-size: 1vw;
+	font-weight: 900;
+}
+
+.buttonStyle {
+	height: 2.5vw;
+	width: 8vw;
+	border: none;
+	border-radius: 1.5px;
+	background-color: #f26255;
+	opacity: 0.95;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.95vw;
+	cursor: pointer;
+	-webkit-transition: box-shadow .2s;
+	transition: box-shadow .2s;
+}
+
+.buttonStyle:hover {
+  box-shadow: 0 0 10px #444;
+}
+
+.buttonStyle:active {
+	box-shadow: inset 0 0 2px #555;
+}
+
+.semicircleImg {
+	position: relative;
+	width: 5vw;
+	height: 5vw;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+header {
+	/*background: url("./img/bg.jpg") no-repeat;*/
+	position: absolute;
+	background-size: 100%;
+	width: 100%;
+	height: 60px;
+}
+
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*---Navigation Style---*/
+
+#menu-icon {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+
+#menu-icon span {
+	display: block;
+	position: relative;
+	height: 4px;
+	width: 40px;
+	background-color: rgba(240, 240, 240, 0.9);
+	border-radius: 9px;
+	left: 0;
+}
+
+#menu-icon span:nth-child(1) {
+	top: 0px;
+}
+
+#menu-icon span:nth-child(2) {
+	top: 6px;
+}
+
+#menu-icon span:nth-child(3) {
+	top: 12px;
+}
+
+#nav-normal {
+	float: left;
+	padding: 0px 0px 0 0;
+}
+
+#nav-normal ul {
+	list-style-type: none;
+	padding: 0px auto;
+	margin: 0px 100px 0px 100px;
+}
+
+#nav-normal li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 110%;
+	display: inline-block;
+	padding: 15px 15px;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+#nav-normal li:hover {
+	background-color: /*#c34b3cee*/#f26255;
+	opacity: 0.9;
+}
+
+.current {
+	background-color: #f26255;
+}
+
+#nav-normal li a {
+	color: #c5c5c5;
+	text-decoration: none;
+}
+
+#nav-socials {
+	float: right;
+}
+
+#nav-socials ul {
+	list-style-type: none;
+	padding: 0 auto;
+}
+
+#nav-socials li {
+	display: inline-block;
+	padding: 15px 2.5px;
+}
+
+/*---End nav styling---*/
+/*---Start background style---*/
+#background-container {
+	z-index: -500;
+	position: absolute;
+	width:100%;
+	height: 300%;
+}
+
+#bg-one {
+	width: 100%;
+	height: 35%;
+	position: relative;
+	background: url("./img/bg.jpg") no-repeat;
+	background-size: 150vw auto;
+	opacity: 0.95;
+	z-index: -1;
+	box-shadow: 0 0 150px #dddddd;
+}
+
+#bg-two {
+	width: 100%;
+	height: 35%;
+	position: relative;
+	background-color: #a69d98;
+	z-index: -2;
+}
+
+#bg-three {
+	width: 100%;
+	height: 30%;
+	position: relative;
+	background-color: #393336;
+	z-index: -3;
+}
+
+/*---End background style---*/
+/*---Start container style---*/
+#bodyContainer > h2 {
+	position: absolute;
+	width: 100%;
+	margin: 115px auto;
+	text-shadow: 0 0 25px #eeeeee;
+}
+
+#bodyContainer > h2 > b {
+	color: #bb1111;
+	opacity: 0.85;
+}
+
+#front-container {
+	position: absolute;
+	width: 75%;
+	height: 200%;
+	margin: 225px 12.5%;
+	background-color: transparent;
+	box-shadow: 0 0 20px #000;
+	border: none;
+	border-radius: 2px;
+}
+
+#part-one {
+position: relative;
+width: 100%;
+height: 25%;
+}
+
+#part-one > h1 {
+position: relative;
+width: 25%;
+margin: 0% 5% 0% 5%;
+padding-top: 4%;
+}
+
+#part-one > h2 {
+position: relative;
+width: 20%;
+margin: 0% 7.5%;
+font-size: 1.25vw;     
+padding: 0.5% 0%;
+}
+
+#part-one > p {
+width: 25%;
+margin: 0% 5%;
+padding: 1.5% 0;
+text-align: center;
+font-size: 0.85vw;
+}
+
+#part-one > button {
+	margin: 0% 12.5%;
+}
+
+#part-three {
+position: relative;
+width: 100%;
+height: 40%;
+background: linear-gradient(rgba(45,42,48,0) 0%, rgba(45,42,48,1) 25%)
+}
+
+article {
+	position: relative;
+	width: 40%;
+	height: 85%;
+	margin: 4% 0;
+	float: left;
+	text-align: right;
+	padding: 2% 1.5% 2% 8.5%;
+}
+
+article > h3 {
+	text-align: right;
+}
+
+article > p {
+	font-size: 1.15vw;
+	padding: 6% 0;
+}
+
+aside {
+	position: relative;
+	width: 40%;
+	height: 85%;
+	margin: 4% 0;
+	float: right;
+	text-align: left;
+	padding: 2% 8.5% 2% 1.5%;
+}
+
+aside > ul {
+	list-style-type: none;
+	margin: 6% auto;
+}
+
+aside > ul > li {
+  margin: 4% auto;
+}
+
+aside > ul > li > img {
+	width: 4.25vw;
+	height: 4.25vw;
+	border: none;
+	border-radius: 50%;
+	padding: 2% 0%;
+	float: left;
+	position: relative;
+}
+
+aside > ul > li > h4 {
+  position: relative;
+	margin-left: 17.5%;
+}
+
+aside > ul > li > h5 {
+  position: relative;
+	font-size: 0.95vw;
+	margin-left: 17.5%;
+}
+
+aside > ul > li > p {
+  position: relative;
+	font-size: 0.85vw;
+	margin-left: 17.5%;
+}
+
+#part-fourth {
+position: relative;
+width: 100%;
+height: 35%;
+background-color: #b5b5b5;
+}
+
+#part-fourth > h3 {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	top: -7%;
+}
+
+#buttonContainer {
+	position: relative;
+	text-align: center;
+	top: -7%;
+}
+
+#buttonContainer > button {
+	width: 7.5vw;
+	height: 2.5vw;
+	border: 2px solid #000;
+	border-radius: 5px;
+	font-size: 0.95vw;
+	font-weight: 100;
+	margin: 0 0.5%;
+	-webkit-transition: background-color .2s, box-shadow .15s;
+	transition: background-color .2s, box-shadow .15s;
+}
+
+#buttonContainer > button:hover {
+  background-color: #f26255;
+	box-shadow: 0 0 5px #444;
+	cursor: pointer;
+}
+
+#buttonContainer > button:active {
+  background-color: #f26255;
+	opacity: 0.85;
+	box-shadow: 0 0 1px #666;
+	cursor: pointer;
+}
+
+#imagesContainer {
+	position: relative;
+	width: 75%;
+	height: 50%;
+	margin: auto;
+	top: -2.5%;
+}
+
+#container-left {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#container-right {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+#container-left > div, #container-right > div {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background: no-repeat center;
+	background-size: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: filter .2s;
+	transition: filter .2s;
+}
+
+#container-left > div:hover, #container-right > div:hover {
+  -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+/*---End sections styling---*/
+/*---Start footer styling---*/
+footer {
+	position: absolute;
+}
+
+#footer-form {
+	top: 250%;
+	width: 60%;
+	height: 40%;
+	margin: 0% 20%;
+}
+
+#footer-form > h4 {
+  text-align: center;
+	padding: 1.5%;
+}
+
+#footer-form form {
+	text-align: center;
+}
+
+#footer-form form > input:nth-child(1), #footer-form form > input:nth-child(2) {
+	position: relative;
+	float: left;
+	width: 46%;
+	height: 2vw;
+	margin: 1%;
+	background-color: #fff;
+	opacity: 0.75;
+	padding: 0 1%;
+	border: none;
+	border-radius: 2px;
+}
+
+#footer-form form > input:nth-child(3) {
+  position: relative;
+	float: right;
+	width: 46%;
+	height: 5vw;
+	margin: 1% 24% 1% 24%;
+	background-color: #fff;
+	opacity: 0.75;
+	padding: 0 1%;
+	border: none;
+	border-radius: 2px;
+}
+
+#footer-form > button {
+	margin: 5% 45%;
+}
+
+#footerLine {
+	position: absolute;
+	top: 296%;
+	width: 50%;
+	text-align: center;
+	font-size: 1.2vw;
+	margin: 0 25%;
+	color: #888;
+}
+/*---End styling for desktops---*/
+/*---Start styling for mbiles and tablets---*/
+@media screen and (max-width:420px) {
+	#menu-icon {
+		display: inline-block;
+		position: absolute;
+		top: 1vw;
+		left: 1vw;
+	}
+	
+	#menu-icon:hover span {
+	   background-color: rgba(255,255,255,1);
+	}
+	
+	#nav-normal ul, #nav-normal:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		left: -30vw;
+		top: 10vw;
+		border: 1px solid rgba(255,255,255,0.5);
+		border-radius: 5px;
+		background-color: rgba(240,240,240,0.25);
+		width: 50%;
+	}
+	
+	#nav-normal:hover ul {
+		display: block;
+	}
+	
+	#nav-normal li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+	
+	.current {
+		background-color: transparent;
+	}
+	
+	/*---End Nav Style---*/
+	h2 {
+		font-size: 250%;
+		padding: 0;
+		margin: 0;
+		top: -7.5%;
+	}
+	
+	#bg-one {
+		background-size: 350%;
+		background-position: center;
+		}
+	
+	#front-container {
+		width: 95%;
+		margin: 45% 2.5%;
+		text-align: center;
+	}
+	
+	#part-one > h1 {
+		width: 100%;
+		font-size: 120%;
+		margin: 0;
+		padding: 5% 0%;
+	}
+	
+	#part-one > h2 {
+		width: 100%;
+		top: 0%;
+		font-size: 85%;
+		margin: 0;
+	}
+	
+	#part-one > p {
+		width: 80%;
+		font-size: 80%;
+		margin: 0;
+		padding: 5% 10%;
+	}
+	
+	.buttonStyle {
+		width: 20vw;
+		height: 5vw;
+		margin: 0 auto;
+		font-size: 45%;
+	}
+	
+	#part-three {
+		text-align: center;
+	}
+	
+	article {
+		width: 80%;
+		height: 45%;
+		margin: 0;
+		padding: 2.5% 10%;
+		text-align: center;
+	}
+	
+	article > h3 {
+		font-size: 100%;
+		text-align: center;
+	}
+
+	article > p {
+		font-size: 7.5px;
+	}
+	
+	aside {
+		width: 80%;
+		height: 40%;
+		margin: auto;
+		padding: 10px 10%;
+	}
+	
+	aside h3 {
+		font-size: 1.5vw;
+		text-align: center;
+	}
+	
+	aside > ul > li {
+		width: 80vw;
+		height: 2.5vw;
+		margin: auto;
+	}
+
+	aside > ul > li > h4{
+    font-size: 50%;
+	}
+	
+	aside > ul > li > h5 {
+		font-size: 45%;
+	}
+	
+	aside > ul > li > p {
+		font-size: 30%;
+	}
+	
+	aside > ul > li > img {
+		height: 30px;
+		width: 30px;
+		padding: 1vw;
+	}
+	
+	.semicircleImg {
+		display: none;
+	}
+	
+	#part-fourth > h3 {
+		top: 0;
+		font-size: 80%;
+	}
+	
+	#part-fourth button {
+		top: 0;
+		height: 4vw;
+		width: 15%;
+		font-size: 30%;
+		font-weight: 100;
+		border: 0.75px solid;
+	}
+	
+	#part-fourth > div {
+		top: 0;
+	}
+	
+	#imagesContainer {
+		width: 85%;
+		margin: 2% auto;
+	}
+	
+	#imagesContainer > div {
+		position: relative;
+		width: 100%;
+		height: 75%;
+		padding: 0;
+		margin: 0;
+		float: center;
+	}
+	
+	#footer-form {
+		width: 100%;
+		margin: 0;
+	}
+	
+	#footer-form > h4 {
+		font-size: 80%;
+	}
+	
+	#footer-form > form {
+		height: 70%;
+		text-align: left;
+	}
+	
+	#footer-form > form > input:nth-child(1), #footer-form > form > input:nth-child(2) {
+		position: relative;
+		margin: 1% 5%;
+		height: 20%;
+		width: 90%;
+	}
+	
+	#footer-form > form > input:nth-child(3) {
+		position: relative;
+		margin: 2% 5%;
+		height: 40%;
+		width: 90%;
+		float: left;
+	}
+	
+	#footer-form > .buttonStyle {
+		position: absolute;
+		left: 0%;
+		right: 0;
+		margin: auto;
+	}
+}
+
+/*---Other screen sizes adjustments---*/
+@media screen and (max-width:768px) {
+	#menu-icon {
+		display: inline-block;
+		position: absolute;
+		top: 1vw;
+		left: 1vw;
+	}
+	
+	#menu-icon:hover span {
+	   background-color: rgba(255,255,255,1);
+	}
+	
+	#nav-normal ul, #nav-normal:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		left: -18vw;
+		top: 80%;
+		border: 1px solid rgba(255,255,255,0.5);
+		border-radius: 5px;
+		background-color: rgba(240,240,240,0.25);
+		width: 50%;
+	}
+	
+	#nav-normal:hover ul {
+		display: block;
+	}
+	
+	#nav-normal li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+	
+	.current {
+		background-color: transparent;
+	}
+	
+	/*---End Nav Style---*/
+	h2 {
+		font-size: 250%;
+		padding: 0;
+		margin: 0;
+		top: -7.5%;
+	}
+	
+	#bg-one {
+		background-size: 350%;
+		background-position: center;
+		}
+	
+	#front-container {
+		width: 95%;
+		margin: 45% 2.5%;
+		text-align: center;
+	}
+	
+	#part-one > h1 {
+		width: 100%;
+		font-size: 120%;
+		margin: 0;
+		padding: 5% 0%;
+	}
+	
+	#part-one > h2 {
+		width: 100%;
+		top: 0%;
+		font-size: 85%;
+		margin: 0;
+	}
+	
+	#part-one > p {
+		width: 80%;
+		font-size: 80%;
+		margin: 0;
+		padding: 5% 10%;
+	}
+	
+	.buttonStyle {
+		width: 20vw;
+		height: 5vw;
+		margin: 0 auto;
+		font-size: 45%;
+	}
+	
+	#part-three {
+		text-align: center;
+	}
+	
+	article h3 {
+		font-size: 3vw;
+	}
+	
+	article p {
+		font-size: 1.5vw;
+	}
+	
+	aside h4 {
+		font-size: 2vw;
+	}
+	
+	aside h3 {
+		font-size: 3vw;
+	}
+	
+	aside ul > li {
+    margin: 15% auto;
+	}
+	
+	.semicircleImg {
+		display: none;
+	}
+	
+	#part-fourth > h3 {
+		top: 0;
+		font-size: 80%;
+	}
+	
+		#part-fourth button {
+		top: 0;
+		height: 4vw;
+		width: 15%;
+		font-size: 30%;
+		font-weight: 100;
+		border: 0.75px solid;
+	}
+	
+	#part-fourth > div {
+		top: 0;
+	}
+	
+	#imagesContainer {
+		width: 85%;
+		margin: 2% auto;
+	}
+	
+	#footer-form {
+		width: 100%;
+		margin: 5% auto;
+	}
+	
+	#footer-form > h4 {
+		font-size: 80%;
+	}
+	
+	#footer-form > form {
+		height: 50%;
+		text-align: left;
+	}
+	
+	#footer-form > form > input:nth-child(1), #footer-form > form > input:nth-child(2) {
+		position: relative;
+		margin: 1% 5%;
+		height: 20%;
+		width: 90%;
+	}
+	
+	#footer-form > form > input:nth-child(3) {
+		position: relative;
+		margin: 2% 5%;
+		height: 40%;
+		width: 90%;
+		float: left;
+	}
+	
+	#footer-form > .buttonStyle {
+		position: absolute;
+		left: 0%;
+		right: 0;
+		top: 80%;
+		margin: auto;
+	}
+}
